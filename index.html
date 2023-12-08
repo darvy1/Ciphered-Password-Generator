@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="Images/digital_padlock_transparent_(512x512).ico">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <script defer src="scripts.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="home-div">
+            <header>
+                <img src="Images/digital padlock transparent (156x156).png">
+                <div>
+                    <h1 class="css-heading">Password Generator</h1>
+                    <h5 class="css-version">Version 3</h5>
+                </div>
+            </header>
+    
+            <section class="buttons-section">
+                <button class="css-create-password-button">
+                    Create a password
+                </button>
+            </section>    
+
+        </div>
+
+        <div class="css-password-creation-absolute js-none">
+
+            <div class="css-password-creation-div-relative">
+                <div class="css-creation-instructions-div">
+                    <div>
+                        <h2>Let's create a strong password!</h2>
+                        <br>
+                        <h3>How to use it</h3>
+                        <p>Enter the number of characters you want in your password in the input field below stating "Enter no. of characters".</p>
+                        <p>To choose which character-types you want in the password (Numbers, Letters & Special Characters), Check the boxes below.</p>
+                        <p>You can then copy it into your clipboard and use it!</p>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="css-exit-generation-button js-exit-generation-button">
+                        [X]
+                    </button>
+                </div>
+
+                <div class="output-and-input-div">
+                    <div>
+                        <input type="text" placeholder="Enter no. of characters" class="js-No-of-Chars-Input">
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <input type="checkbox" class="js-Number-Chars-Checkbox">
+                        <span>Numbers</span>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" class="js-Letter-Chars-Checkbox">
+                        <span>Letters</span>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" class="js-Special-Chars-Checkbox">
+                        <span>Special Characters</span>
+                    </div>
+
+                    <br>
+
+                    <span class="js-password-output-span">
+                        <input type="text" placeholder="Password will appear here" class="js-password-output">
+                    </span>
+
+                    <span>
+                        <button class="js-generate-password">
+                            Generate
+                            <img src="Images/Regenerate icon.png" class="js-regen-img">
+                        </button>
+                    </span>
+
+                    <span class="Error-texts"></span>
+                </div>
+            </div>
+        </div>
+
+       <div class="css-curve-container1">
+            <div class="css-curve-div1">
+                <div class="css-curve1"></div>
+            </div>
+       </div>
+
+    </body>
+</html>

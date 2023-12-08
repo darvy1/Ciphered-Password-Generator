@@ -1,0 +1,285 @@
+:root{
+    --darkwaveblue: #3c31dd;
+    --lightwaveblue: rgb(7, 114, 150);
+    --error-red: rgb(184, 0, 0);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    color: white;
+    background-color: rgb(15,15,15);
+}
+
+.css-password-creation-absolute,
+.home-div{
+    top: 25%;
+    bottom: 35%;
+    right: 50%;
+    left: 50%;
+}
+
+body,
+section{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 156px auto;
+    column-gap: 5px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.css-heading{
+    margin: 0;
+    width: 100%;
+}
+
+.css-version{
+    font-style: italic;
+    margin: 0;
+}
+
+.buttons-section{
+    grid-template-rows: auto auto;
+    row-gap: 15px;
+}
+
+.buttons-section button{
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    color: rgb(150, 150, 150);
+    font-family: 'Raleway', Helvetica, sans-serif;
+    padding: 10px;
+    box-shadow: 0 1px 1px rgb(0, 0, 20);
+    transition: all 0.115s;
+    background-color: rgb(25,25,25);
+}
+
+.buttons-section button:hover{
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.buttons-section button:active{
+    padding: 10px;
+    opacity: 0.7;
+}
+
+.css-create-password-button:hover {
+    background-color: var(--darkwaveblue);
+}
+
+body{
+    position: relative;
+}
+
+.css-password-creation-absolute {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    right: 50px;
+    left: 50px;
+    background-color: rgb(96, 96, 96);
+    opacity: 0.8;
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 3;
+}
+
+.js-none{
+    display: none;
+}
+
+.js-home-page-blur{
+    filter: blur(8px);
+}
+
+.output-and-input-div{
+    background-color: rgb(128,128,128);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.css-exit-generation-button,
+.output-and-input-div button,
+.output-and-input-div input{
+    padding: 10px 50px 10px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0 solid;
+}
+
+.output-and-input-div div input{
+    padding: 5px 30px 5px 5px;
+    font-size: 15px;
+    border-style: solid;
+}
+
+.css-exit-generation-button,
+.output-and-input-div button{
+    padding-right: 10px;
+    background-color: var(--darkwaveblue);
+    transition: all 0.15s;
+    margin: 5px;
+}
+
+.css-exit-generation-button:hover,
+.output-and-input-div button:hover{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.css-exit-generation-button:active,
+.output-and-input-div button:active{
+    opacity: 0.7;
+}
+
+.css-exit-generation-button{
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 15px;
+    color: var(--error-red);
+    padding: 5px;
+    font-weight: 600;
+    background-color: rgb(128,128,128);
+    border-radius: 2px;
+}
+
+.output-and-input-div div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.output-and-input-div div span{
+    font-size: 15px;
+}
+
+.css-creation-instructions-div {
+    width: 1044px;
+}
+
+.css-password-creation-div-relative{
+    position: relative;
+}
+
+.Error-texts{
+    font-style: italic;
+    color: var(--error-red);
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/*Curves and waves*/
+
+.css-curve-container1{
+    position: absolute;
+    top: 87%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.css-curve-div1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: var(--darkwaveblue);
+}
+
+.css-curve1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+
+.css-curve1::after,
+.css-curve1::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 55%;
+    height: 100%;
+}
+
+@keyframes waves-after {
+    0%{
+        border-radius: 40% 80% 50% 80%;
+    }
+
+    50%{
+        border-radius: 15% 70% 50% 80%;
+    }
+
+    100%{
+        border-radius: 40% 80% 50% 80%;
+    }
+}
+
+.css-curve1::after{
+    background-color: var(--darkwaveblue);
+    transform: translate(-3% ,-40%);
+    border-radius: 40% 80% 50% 80%;
+    animation: waves-after 3s ease-in-out infinite 1s;
+    z-index: 2;
+}
+
+@keyframes waves-before {
+    0%{
+        border-radius: 100% 50% 70% 50%;
+    }
+
+    50%{
+        border-radius: 40% 30% 70% 50%;
+    }
+
+    100%{
+        border-radius: 100% 50% 70% 50%;
+    }
+}
+
+.css-curve1::before{
+    background-color: rgb(15,15,15);
+    border-radius: 100% 50% 70% 50%;
+    transform: translate(93%, -70%);
+    animation: waves-before 3s ease-in-out infinite 1s;
+}
+
+@media (max-width: 1139px) {
+    .css-creation-instructions-div{
+        display: none;
+    }
+
+    .output-and-input-div{
+        width: 80%;
+        height: 80%;
+    }
+
+    .css-exit-generation-button {
+        display: block;
+    }
+
+    .output-and-input-div span input {
+        padding-right: 10px;
+    }
+}
