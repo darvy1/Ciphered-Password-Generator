@@ -15,14 +15,6 @@ body {
     background-color: rgb(15,15,15);
 }
 
-.css-password-creation-absolute,
-.home-div{
-    top: 25%;
-    bottom: 35%;
-    right: 50%;
-    left: 50%;
-}
-
 body,
 section{
     display: grid;
